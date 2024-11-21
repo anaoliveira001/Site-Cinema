@@ -52,6 +52,10 @@ body{
     gap: 20px;
 }
 
+.header .logo{
+    height: 30px;
+}
+
 .header .button{
     background: #F70F2B;
     padding: 5px 15px;
@@ -96,3 +100,10 @@ body{
 .featured .wrapper{
     display: flex;
 }
+
+.featured .thumb{
+    height: 150px;
+    width: 16.67%;
+    object-fit: cover;
+    object-position: center;
+} 
