@@ -92,3 +92,7 @@ body{
 .featured{
     background: black;
 }
+
+.featured .wrapper{
+    display: flex;
+}
