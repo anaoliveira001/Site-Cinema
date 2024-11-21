@@ -107,3 +107,14 @@ body{
     object-fit: cover;
     object-position: center;
 } 
+
+
+.section .wrapper{
+    display: flex;
+}
+
+.section .text-area{
+    width: 450px;
+    height: 450px;
+    background: #F70F2B;
+}
