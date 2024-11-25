@@ -15,11 +15,25 @@
     src: url('../fontes/Roboto/Roboto-Black.ttf'); 
 }
 
+/*Variables*/
+
+:root{
+    --main-color: rgb(54, 53, 53);
+    --light-text: #727070;
+    --button-color: #F70F2B;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Roboto';
 }
 
+/*body config*/
 body{
     margin: 0;
     font-family: 'Roboto';
@@ -27,12 +41,14 @@ body{
     color: rgb(54, 53, 53);
 }
 
+
 .wrapper{
     max-width: 1250px;
     margin: 0 auto;
     padding: 15px;
 }
 
+/*header config*/
 .header{
     color: white;
     background-color: black;
@@ -57,10 +73,12 @@ body{
 }
 
 .header .button{
-    background: #F70F2B;
+    background: var(--button-color);
     padding: 5px 15px;
     border-radius: 200px;
 }
+
+/*slider config*/
 
 .slider{
     height:calc(100vh - 60px) ;
@@ -81,20 +99,23 @@ body{
     width: 600px;
 }
 
-.text-area .title{
+.slider .text-area .title{
     color: aliceblue;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
 
-.text-area .description{
+.slider .text-area .description{
     color: aliceblue;
     font-weight: bolder;
     line-height: 25px;
 }
 
+/*feature config*/
+
 .featured{
     background: black;
+    margin-bottom: 30px;
 }
 
 .featured .wrapper{
@@ -108,13 +129,47 @@ body{
     object-position: center;
 } 
 
+/*Section config*/
+
+.section {
+    margin-bottom: 60px;
+}
 
 .section .wrapper{
     display: flex;
 }
 
 .section .text-area{
-    width: 450px;
-    height: 450px;
-    background: #F70F2B;
+    flex: 1;
+}
+
+.section .title{
+    text-transform: uppercase;
+    font-size: 23px;
+    margin: 0;
+}
+
+.section .details{
+    color: var(--light-text);
+    margin-bottom: 30px;
+}
+
+.section .button{
+    background-color: var(--button-color);
+    color: aliceblue;
+    border-radius: 200px;
+    padding: 10px 15px;
+}
+
+.section .thumbs{
+    display: flex;
+    gap: 25px;
+    flex: 2;
+}
+
+.section .thumbs .img{
+    width: 20%;
+    height: 175px;
+    object-fit: cover;
+    position: center;
 }
